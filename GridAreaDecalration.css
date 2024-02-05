@@ -1,0 +1,34 @@
+@media (min-width: 1023px){
+.grid-area{
+    display: grid;
+    grid-template-areas:
+        ". . . . . . . . . . . . . . . ."
+        ". . . . . i i . . . . . s s s ."
+        ". . . . . i i . . . . . s s s ."
+        ". . . . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . . . .";
+    grid-template-columns: 1fr 1fr 2fr 1.3fr 1.067fr 1.6fr 4.8fr 3.2fr 3.2fr 4.8fr 1.6fr 1.067fr 1.3fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1.3fr 2.667fr 2.667fr 1.3fr 3fr 1fr;
+}
+}
+
+@media (max-width: 1023px) {
+    .grid-area {
+        display: grid;
+        grid-template-areas:
+        ". . . . . . . . . ."
+        ". i i i i i . . . ."
+        ". . . . . . s s s ."
+        ". . . . . . . . . ."
+        ". c c c c c c c c ."
+        ". . . . . . . . . .";
+    grid-template-columns: minmax(12px,auto) repeat(8,1fr) minmax(12px,auto);
+    grid-template-rows: 6rem auto auto 2.5rem 1fr 2.125rem;
+    column-gap: 0.75rem;
+    height: 100vh;
+    width: 100vw;
+    }
+}
